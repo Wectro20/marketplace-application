@@ -72,7 +72,7 @@ public class UserController {
             throw new MarketplaceNotFoundException("User with id: " + id + " not found");
         }
         LOGGER.info("Successfully deleted user with id: " +id);
-        userService.getUserId(id);
+        userService.deleteUserById(id);
         return ResponseEntity.noContent().build();
     }
 }
