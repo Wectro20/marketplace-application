@@ -73,7 +73,7 @@ public class ProductController {
             throw new MarketplaceNotFoundException("Product with id: " + id + " not found");
         }
         LOGGER.info("Successfully deleted product with id: " +id);
-        productService.getProductId(id);
+        productService.deleteProductById(id);
         return ResponseEntity.noContent().build();
     }
 }
