@@ -49,4 +49,9 @@ public class User {
     public int hashCode() {
         return Objects.hash(id, firstName, secondName, amountOfMoney);
     }
+
+    @Override
+    public String toString() {
+        return "id=" + id + ", firstName='" + firstName + '\'' + ", secondName='" + secondName + '\'' + ", amountOfMoney=" + amountOfMoney +"\n";
+    }
 }
