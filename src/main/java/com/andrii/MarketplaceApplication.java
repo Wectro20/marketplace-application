@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan({"com.andrii.controllers", "com.andrii.service", "com.andrii.exceptions","com.andrii.repository","com.andrii.config", "com.andrii.view"})
+@ComponentScan({"com.andrii.controllers", "com.andrii.service", "com.andrii.exceptions","com.andrii.repository","com.andrii.config"})
 @EntityScan({"com.andrii.models"})
 @EnableJpaRepositories("com.andrii.repository")
 
